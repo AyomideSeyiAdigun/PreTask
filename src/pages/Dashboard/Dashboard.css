@@ -1,0 +1,90 @@
+.dashboard{
+    text-align: center;
+    display: flex;
+    margin-left: 30%;
+    margin-top: 5%;
+    position: relative;
+
+}
+.dashboard__List > ul >li{
+    display: inline;
+    margin-right: 95px;
+    
+}
+.dashboard__List{
+    position: absolute;
+    top: 30px;
+    left: 60px;
+}
+.dashboard__Progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 550px;
+
+}
+.dashboard__Progress-container::before{
+    content: '';
+    background-color: #efefef;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+    
+}
+.dashboard_Progress{
+    background-color: #3498db;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 00%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+.dashboard__Circle{
+background-color: #fff;
+color: #999;
+border-radius: 50%;
+height: 30px;
+width: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 2px solid #efefef;
+
+transition: 0.4s ease;
+}
+.dashboard__Circle.active{
+    border-color: #cd9042;
+}
+.dashboard__Btn{
+    background-color: #cd9042;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+    position: absolute;
+    top:120px;
+    left: 250px;
+}
+.dashboard__Btn:disabled{
+    background-color: #999;
+    cursor: not-allowed;
+
+}
+.dashboard__Btn:focus{
+    outline: 0 ;
+}
+.dashboard__Btn.active{
+    transform: scale(0.98);
+}

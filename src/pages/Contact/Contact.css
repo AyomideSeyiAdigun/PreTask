@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+ 
+
+.contact {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contact__Form input[type="text"], #contact__Form input[type="email"], #contact__Form input[type="tel"], #contact__Form input[type="url"], #contact__Form textarea, #contact__Form button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact__Form {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact__Form h3 {
+	color:   #cd9042;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact__Form h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact__Form input[type="text"], #contact__Form input[type="email"], #contact__Form input[type="tel"], #contact__Form input[type="url"], #contact__Form textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact__Form input[type="text"]:hover, #contact__Form input[type="email"]:hover, #contact__Form input[type="tel"]:hover, #contact__Form input[type="url"]:hover, #contact__Form textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact__Form textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact__Form button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background: #131921;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact__Form button[type="submit"]:hover {
+	background-color: #131921;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact__Form button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact__Form input:focus, #contact__Form textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
